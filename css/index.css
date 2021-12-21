@@ -20,8 +20,7 @@ ul[class*="select"] {
 ul[class*="select"] > li {
     margin: 1rem;
     padding: 1rem;
-    
-    background-color: rgb(27, 27, 31)8;
+    ;
     border: 1px solid #888a85;
     border-radius: 6px;
 }
