@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="cache-control" content="no-cache">
+        <title>OTD.Backport Wiki - Installation</title>
+        <!--Kinda weird that you're looking here feelsweirdman-->
+        <link rel="styleSheet" href="css/layout.css" type="text/css">
+        <link rel="styleSheet" href="css/header.css" type="text/css">
+        <link rel="styleSheet" href="css/installation.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="no-style, inline">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="installation.html">Installation</a>
+                    </li>
+                    <li>
+                        <a href="troubleshooting.html">Troubleshooting</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Mrcubix/OTD.Backport/releases">Releases</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="content">
+            <h1>Installing OTD.Backport</h1>
+            <details open="open">
+                <summary>Summary</summary>
+                <ul class="decimal">
+                    <li>
+                        <a href="#Windows">Windows</a>
+                        <ol class="dot">
+                            <li><a href="#Win-Plugin-Manager">Plugin Manager</a></li>
+                            <li><a href="#Win-Manual">Manual Install</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#Linux">Linux</a>
+                        <ol class="dot">
+                            <li><a href="#Linux-Plugin-Manager">Plugin Manager</a></li>
+                            <li><a href="#Linux-Manual">Manual Install</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#MacOS">MacOS</a>
+                        <ol class="dot">
+                            <li><a href="#MacOS-Plugin-Manager">Plugin Manager</a></li>
+                            <li><a href="#MacOS-Manual">Manual Install</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </details>
+            <section id="Windows">
+                <h1>Windows</h1>
+                <section id="Win-Plugin-Manager">
+                    <h2>From the Plugin Manager</h2>
+                    <ul class="decimal">
+                        <li>Install OTD.Backport from Plugin Manager</li>
+                        <li>Go to Tools &gt; OTD.Backport</li>
+                        <li>Check the Enable box</li>
+                        <li>Click Apply</li>
+                        <li>Do Tablets &gt; Detect tablet</li>
+                        <li>Set your Tablet Area</li>
+                        <li>Click on Save and you're set!</li>
+                    </ul>
+                </section>
+                <section id="Win-Manual">
+                    <h2>Manual Install</h2>
+                    <ul class="decimal">
+                        <li>Get the latest release from <a href="https://github.com/Mrcubix/OTD.Backport/releases/latest">Here</a></li>
+                        <li>Drag & Drop the Downloaded .zip file as is in the Plugin Manager</li>
+                        <li>Go to Tools &gt; OTD.Backport</li>
+                        <li>Check the Enable box</li>
+                        <li>Click Apply</li>
+                        <li>Do Tablets &gt; Detect tablet</li>
+                        <li>Set your Tablet Area</li>
+                        <li>Click on Save and you're set!</li>
+                    </ul>
+                </section>
+            </section>
+            <section id="Linux">
+                <h2>Linux</h2>
+                <p>Since Users don't have write permissions to <code>/usr/share</code> by default, the plugin is hardcoded to automatically throw an error when linux is detected.</p>
+                <p>You will have to update the tablets configurations manually by downloading the release from Github, Extracting the content to a separate folder then moving files using root priviledges.</p>
+                <section id="Linux-Plugin-Manager">
+                    <h3>From the Plugin Manager</h3>
+                    <ul class="decimal">
+                        <li>Install OTD.Backport from Plugin Manager</li>
+                        <li>Get the latest release from <a href="https://github.com/Mrcubix/OTD.Backport/releases/latest">Here</a></li>
+                        <li>Extract the content of the Downloaded .zip file in a separate folder</li>
+                        <li>Update the content of usr/share/OpenTabletDriver/Configurations using the newly extract Configurations folder (this is usually done using sudo cp [location] /usr/share/OpenTabletDriver/Configurations)</li>
+                        <li>Do Tablets &gt; Detect tablet</li>
+                        <li>Set your Tablet Area</li>
+                        <li>Click on Save and you're set!</li>
+                    </ul>
+                </section>
+                <section id="Linux-Manual">
+                    <h3>Manual Install</h3>
+                    <ul class="decimal">
+                        <li>Get the latest release from <a href="https://github.com/Mrcubix/OTD.Backport/releases/latest">Here</a></li>
+                        <li>Drag & Drop the Downloaded .zip file as is in the Plugin Manager</li>
+                        <li>Extract the content of the Downloaded .zip file in a separate folder</li>
+                        <li>Update the content of <code>usr/share/OpenTabletDriver/Configurations</code> using the newly extract Configurations folder (this is usually done using <code>sudo cp [location] /usr/share/OpenTabletDriver/Configurations</code>)</li>
+                        <li>Do Tablets &gt; Detect tablet</li>
+                        <li>Set your Tablet Area</li>
+                        <li>Click on Save and you're set!</li>
+                    </ul>
+                </section>
+            </section>
+            <section id="MacOS">
+                <h2>MacOS</h2>
+                <p>It is possible that the Configurations folder update fail as the plugin is untested on MacOS</p>
+                <section id="MacOS-Plugin-Manager">
+                    <h3>From the Plugin Manager</h3>
+                    <ul class="decimal">
+                        <li>Install OTD.Backport from Plugin Manager</li>
+                        <li>Go to Tools &gt; OTD.Backport</li>
+                        <li>Check the Enable box</li>
+                        <li>Click Apply</li>
+                        <li>Do Tablets &gt; Detect tablet</li>
+                        <li>Set your Tablet Area</li>
+                        <li>Click on Save and you're set!</li>
+                    </ul>
+                </section>
+                <section id="MacOS-Manual">
+                    <h3>Manual Install</h3>
+                    <ul class="decimal">
+                        <li>Get the latest release from <a href="https://github.com/Mrcubix/OTD.Backport/releases/latest">Here</a></li>
+                        <li>Drag & Drop the Downloaded .zip file as is in the Plugin Manager</li>
+                        <li>Extract the content of the Downloaded .zip file in a separate folder</li>
+                        <li>Update the content of <code>~/Library/Application Support/OpenTabletDriver/Configurations</code> using the newly extract Configurations folder (this is usually done using <code>sudo cp [location] ~/Library/Application Support/OpenTabletDriver/Configurations</code>)</li>
+                        <li>Do Tablets &gt; Detect tablet</li>
+                        <li>Set your Tablet Area</li>
+                        <li>Click on Save and you're set!</li>
+                    </ul>
+                </section>
+            </section>
+
+        </section>
+    </body>
+</html>

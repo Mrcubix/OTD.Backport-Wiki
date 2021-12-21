@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    line-height: 1.5;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 500;
+    background: #212120;
+    color: #858380
+}
+
+section {
+    margin-left: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #426d93
+}
+
+ul[class*="no-style"] {
+    list-style-type: none;
+    padding: 0
+}

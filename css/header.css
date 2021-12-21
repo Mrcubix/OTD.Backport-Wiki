@@ -1,0 +1,12 @@
+ul[class*="inline"] {
+    padding: 1rem 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #1D1D1B
+}
+
+ul[class*="inline"] > li > a {
+    color: #949392;
+    font-size: 1.25rem
+}
